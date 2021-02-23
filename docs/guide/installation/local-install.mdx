@@ -51,3 +51,18 @@ At any time, you can access the Botfront menu to create or run a project by runn
   <source src="../../videos/setup.mp4" type="video/mp4"/>
   Your browser does not support the video tag.
 </video>
+
+
+## Secure rasa access (optional)
+
+You might want to secure the communication between botfront and rasa-for-botfront.
+
+- In the instance settings there is a token, you can edit it or generate new ones as you feel.
+![](../../images/auth_token_instance_settings.png)
+
+- Add this token in env part of the botfront.yml under the key auth_token
+![](../../images/auth_token_botfront_yaml.png)
+
+- restart botfront (`botfront down` and then `botfront up`)
+
+The rasa api is now protected !
